@@ -3,20 +3,20 @@ jaffle_shop:
   outputs:
     snowflake:
       type: snowflake
-      account: {{ env_var('DBT_SNOWFLAKE_ACCOUNT') }}
+      account: "{{ env_var('DBT_SNOWFLAKE_ACCOUNT') }}"
 
       # User/password auth
       #user: {{ env_var('DBT_SNOWFLAKE_USER') }}
       #password: {{ env_var('DBT_SNOWFLAKE_PASSWORD') }}
 
       # Key pair auth
-      user: {{ env_var('DBT_SNOWFLAKE_USER') }}
-      private_key: {{ env_var('DBT_SNOWFLAKE_PRIVATE_KEY') }}
+      user: "{{ env_var('DBT_SNOWFLAKE_USER') }}"
+      private_key: "{{ env_var('DBT_SNOWFLAKE_PRIVATE_KEY') }}"
 
-      role: {{ env_var('DBT_SNOWFLAKE_ROLE') }}
-      database: {{ env_var('DBT_SNOWFLAKE_DATABASE') }}
-      warehouse: {{ env_var('DBT_SNOWFLAKE_WAREHOUSE') }}
-      schema: {{ env_var('DBT_SNOWFLAKE_ROLE') }}
+      role: "{{ env_var('DBT_SNOWFLAKE_ROLE') }}"
+      database: "{{ env_var('DBT_SNOWFLAKE_DATABASE') }}"
+      warehouse: "{{ env_var('DBT_SNOWFLAKE_WAREHOUSE') }}"
+      schema: "{{ env_var('DBT_SNOWFLAKE_ROLE') }}"
 
       threads: 2
       client_session_keep_alive: False
