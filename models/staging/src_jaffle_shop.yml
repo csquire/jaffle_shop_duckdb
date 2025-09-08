@@ -4,7 +4,7 @@ sources:
   - name: jaffle_shop
     description: sources
     database: raw
-    schema: dbt_csquire
+    schema: dev
     tables:
       - name: raw_customers
       - name: raw_orders
