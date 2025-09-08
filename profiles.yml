@@ -6,10 +6,10 @@ jaffle_shop:
       account: {{ env_var('DBT_SNOWFLAKE_ACCOUNT') }}
 
       # User/password auth
-#      user: {{ env_var('DBT_SNOWFLAKE_USER') }}
-#      password: {{ env_var('DBT_SNOWFLAKE_PASSWORD') }}
+      #user: {{ env_var('DBT_SNOWFLAKE_USER') }}
+      #password: {{ env_var('DBT_SNOWFLAKE_PASSWORD') }}
 
-        # Key pair auth
+      # Key pair auth
       user: {{ env_var('DBT_SNOWFLAKE_USER') }}
       private_key: {{ env_var('DBT_SNOWFLAKE_PRIVATE_KEY') }}
 
