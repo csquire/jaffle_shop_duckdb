@@ -1,0 +1,11 @@
+version: 2
+
+sources:
+  - name: jaffle_shop
+    description: sources
+    database: raw
+    schema: dbt_csquire
+    tables:
+      - name: raw_customers
+      - name: raw_orders
+      - name: raw_payments
