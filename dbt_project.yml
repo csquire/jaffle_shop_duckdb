@@ -25,6 +25,11 @@ seeds:
 
 models:
   jaffle_shop:
+    +freshness:
+      build_after:
+        count: 5
+        period: minutes
+        updates_on: any
     +materialized: table
     staging:
       +materialized: view
