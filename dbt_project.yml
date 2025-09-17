@@ -26,7 +26,7 @@ seeds:
 models:
   +freshness:
     build_after:
-      count: 1
+      count: 10
       period: minute
       updates_on: any
   jaffle_shop:
