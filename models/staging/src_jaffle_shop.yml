@@ -3,7 +3,7 @@ version: 2
 sources:
   - name: jaffle_shop
     description: sources
-    database: raw
+    database: fde-testing-450816
     schema: dev
     tables:
       - name: raw_customers
