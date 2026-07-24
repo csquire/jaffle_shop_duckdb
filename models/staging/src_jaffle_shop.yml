@@ -3,8 +3,8 @@ version: 2
 sources:
   - name: jaffle_shop
     description: sources
-    database: dbt-cloud-staging-psc-dwh
-    schema: jaffle_shop_duckdb
+    database: fde-testing-450816
+    schema: raw
     tables:
       - name: raw_customers
       - name: raw_orders
